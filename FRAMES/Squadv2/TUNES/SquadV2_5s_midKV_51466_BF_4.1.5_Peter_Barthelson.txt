@@ -1,0 +1,139 @@
+feature AIRMODE
+feature ANTI_GRAVITY
+feature DYNAMIC_FILTER
+
+# master
+set gyro_hardware_lpf = NORMAL
+set gyro_sync_denom = 2
+set gyro_lowpass_type = PT1
+set gyro_lowpass_hz = 200
+set gyro_lowpass2_type = PT1
+set gyro_lowpass2_hz = 500
+set gyro_notch1_hz = 0
+set gyro_notch1_cutoff = 0
+set gyro_notch2_hz = 0
+set gyro_notch2_cutoff = 0
+set gyro_calib_duration = 125
+set gyro_calib_noise_limit = 48
+set gyro_offset_yaw = 0
+set gyro_overflow_detect = ALL
+set yaw_spin_recovery = ON
+set yaw_spin_threshold = 1950
+set gyro_to_use = FIRST
+set dyn_notch_range = LOW
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 200
+set dyn_notch_min_hz = 90
+set dyn_lpf_gyro_min_hz = 400
+set dyn_lpf_gyro_max_hz = 1000
+set gyro_filter_debug_axis = ROLL
+
+set rc_interp = AUTO
+set rc_interp_ch = RPYT
+set rc_interp_int = 19
+set rc_smoothing_type = FILTER
+set rc_smoothing_input_hz = 0
+set rc_smoothing_derivative_hz = 0
+set rc_smoothing_debug_axis = ROLL
+set rc_smoothing_input_type = BIQUAD
+set rc_smoothing_derivative_type = BIQUAD
+set rc_smoothing_auto_smoothness = 10
+
+set airmode_start_throttle_percent = 25
+
+set min_throttle = 1070
+set max_throttle = 2000
+set min_command = 1000
+set dshot_idle_value = 700
+set dshot_burst = ON
+set dshot_bidir = ON
+set dshot_bitbang = AUTO
+set dshot_bitbang_timer = AUTO
+set use_unsynced_pwm = OFF
+set motor_pwm_protocol = DSHOT300
+set motor_pwm_rate = 480
+set motor_pwm_inversion = OFF
+set motor_poles = 14
+
+set tlm_inverted = OFF
+set tlm_halfduplex = ON
+
+set dyn_lpf_dterm_min_hz = 140
+set dyn_lpf_dterm_max_hz = 340
+set dterm_lowpass_type = PT1
+set dterm_lowpass_hz = 150
+set dterm_lowpass2_type = PT1
+set dterm_lowpass2_hz = 300
+set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
+set vbat_pid_gain = OFF
+set pid_at_min_throttle = ON
+set anti_gravity_mode = SMOOTH
+set anti_gravity_threshold = 250
+set anti_gravity_gain = 5000
+set feedforward_transition = 0
+set acc_limit_yaw = 0
+set acc_limit = 0
+
+set iterm_rotation = OFF
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 20
+set iterm_windup = 100
+set iterm_limit = 400
+set pidsum_limit = 500
+set pidsum_limit_yaw = 400
+set yaw_lowpass_hz = 0
+set throttle_boost = 5
+set throttle_boost_cutoff = 15
+
+set p_pitch = 86
+set i_pitch = 70
+set d_pitch = 44
+set f_pitch = 75
+set p_roll = 70
+set i_roll = 65
+set d_roll = 42
+set f_roll = 70
+set p_yaw = 104
+set i_yaw = 110
+set d_yaw = 0
+set f_yaw = 0
+
+set d_min_roll = 23
+set d_min_pitch = 23
+set d_min_yaw = 0
+set d_min_boost_gain = 27
+set d_min_advance = 20
+set motor_output_limit = 100
+
+set ff_interpolate_sp = AVERAGED
+set ff_spike_limit = 60
+set ff_max_rate_limit = 100
+set ff_boost = 15
+set idle_min_rpm = 14
+set idle_adjustment_speed = 50
+set idle_p = 50
+set idle_pid_limit = 200
+set idle_max_increase = 150
+
+set thr_mid = 50
+set thr_expo = 0
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 83
+set pitch_rc_rate = 83
+set yaw_rc_rate = 78
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 0
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 70
+set tpa_rate = 50
+set tpa_breakpoint = 1400
+set tpa_mode = D
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+set roll_rate_limit = 1998
+set pitch_rate_limit = 1998
+set yaw_rate_limit = 1998
