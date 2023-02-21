@@ -22,5 +22,3 @@ If you want to resell one or more of these frames please contact ted.elmenheim@g
 
 - [Squadv2](FRAMES/Squadv2/TUNES)
 - [miniSquad](FRAMES/miniSquad/TUNES)
-
-GPLv3
